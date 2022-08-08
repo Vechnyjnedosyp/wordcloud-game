@@ -1,0 +1,17 @@
+.card{
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.score {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+.restart {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}

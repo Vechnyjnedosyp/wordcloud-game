@@ -1,0 +1,17 @@
+<div class="layout">
+  <h1>Wordcloud game</h1>
+
+  <div>
+    <input
+      [(ngModel)]="name"
+      type="nickname"
+      id="nickname"
+      placeholder="Enter your nickname here..."
+      autofocus
+    />
+  </div>
+
+  <button class="btn-primary" (click)="play()" [disabled]="checkName()">
+    play
+  </button>
+</div>

@@ -1,0 +1,30 @@
+<div class="layout">
+  <h3>{{ question | titlecase }}</h3>
+
+  <div class="cloud-container">
+    <div class="flex-container">
+      <button
+        class="btn-primary word"
+        (click)="onSelect(word.name)"
+        *ngFor="let word of this.gameService.gameAnswers"
+        [ngClass]="{
+          'word-selected': word.isSelected,
+          'word-good': word.isCheck === 'Good',
+          'word-bad': word.isCheck === 'Bad'
+        }"
+        [disabled]="this.isDisabled"
+      >
+        <small *ngIf="word.isCheck">
+          {{ word.isCheck }}
+        </small>
+        {{ word.name }}
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <button class="btn-primary" (click)="onClick(buttonMessage)">
+      {{ buttonMessage }}
+    </button>
+  </div>
+</div>

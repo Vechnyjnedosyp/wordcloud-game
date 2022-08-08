@@ -1,0 +1,49 @@
+.cloud-container {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.flex-container {
+  border: 1px solid var(--dark-color);
+  border-radius: 5px;
+  background: var(--light-color);
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 20px;
+}
+
+.word {
+  border: none;
+  padding: 15px;
+  margin: 5px;
+  color: var(--dark-color);
+
+  &:disabled {
+    color: var(--dark-color);
+  }
+}
+
+.word-selected {
+  color: rgb(47, 148, 135);
+}
+
+.word-good {
+  color: var(--success-color);
+
+  &:disabled {
+    color: var(--success-color);
+  }
+}
+.word-bad {
+  color: var(--danger-color);
+
+  &:disabled {
+    color: var(--danger-color);
+  }
+}

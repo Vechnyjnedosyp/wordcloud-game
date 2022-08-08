@@ -1,0 +1,13 @@
+<div class="card layout">
+  <h2>
+    <p>Congratulation, {{ this.userService.user }}!</p>
+  </h2>
+  <div>
+    <h3>Your score:</h3>
+  </div>
+  <div><h3 class="score">{{this.score}} points</h3></div>
+</div>
+
+<div class="restart">
+  <button class="btn-primary" (click)="onRestart()">Restart</button>
+</div>

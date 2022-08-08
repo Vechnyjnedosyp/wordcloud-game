@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #29dff4;
+  --dark-color: #333333;
+  --light-color: #fff;
+  --disabled-color: #ff9456;
+  --danger-color: #ff6474;
+  --success-color: #6aff8d;
+}
+
+* {
+  font-family: "Roboto", monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.layout {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background: var(--light-color);
+  color: var(--primary-color);
+}
+
+.btn-primary {
+  display: block;
+  margin: 0 auto;
+  padding: 7px 20px;
+  margin-top: 10px;
+  outline: none;
+  text-align: center;
+  font-weight: 900;
+
+  &:disabled {
+    cursor: not-allowed;
+    border-color: var(--disabled-color);
+    color: var(--disabled-color);
+  }
+}
+
+small {
+  font-size: larger;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
